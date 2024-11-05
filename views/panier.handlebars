@@ -1,0 +1,11 @@
+<div class="panier">
+    {{#each panier}}
+        <div>NOM DU PRODUIT: {{this.nom}}</div>
+        <div>QUANTITE: {{this.quantite}}</div>
+        <div>PRIX: {{this.prix}}</div>
+        <button class="boutonEffacerProduit" data-id="{{this.id_produit}}">Effacer</button>
+    {{/each}}          
+</div>
+<button class="boutonCommander" data-id="1">
+    COMMANDER
+</button>

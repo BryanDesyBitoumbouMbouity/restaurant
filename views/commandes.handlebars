@@ -1,0 +1,27 @@
+<h1>LES COMMANDES</h1>
+
+<table class="commande-table">
+    <thead>
+        <tr>
+            <th>ID COMMANDE</th>
+            <th>ID UTILISATEUR</th>
+            <th>NOM DU PRODUIT</th>
+            <th>QUANTITE</th>
+            <th>DATE/HEURE</th>
+            <th>ETAT DU COMMANDE</th>
+        </tr>
+    </thead>
+    <tbody class="listeCommande">
+        {{#each commandes}}
+            <tr>
+                <td>{{this.id_commande}}</td>
+                <td>{{this.id_utilisateur}}</td>
+                <td>{{this.nom}}</td>
+                <td>{{this.quantite}}</td>
+                <td>{{this.date}}</td>
+                <td>{{this.etat_du_commande}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+    <tfoot></tfoot>
+</table>

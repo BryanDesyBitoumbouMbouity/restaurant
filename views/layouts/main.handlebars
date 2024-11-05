@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titre}}</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    
+     {{#each styles}}
+        <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+
+    {{#each scripts}}
+        <script type="module" src="{{this}}"></script>
+    {{/each}}
+</head>
+<body>
+
+    <header>
+
+        <div class="right">
+
+            <ul class="liste1">
+
+                <li><a href="/">ACCEUIL</a></li>
+                <li><a href="/panier">PANIER</a></li>
+                <li><a href="/commandes">COMMANDES</a></li>
+
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        {{{body}}}
+
+    </main>
+
+    <footer>
+        &copy; Resto
+    </footer>
+
+    
+</body>
+</html>

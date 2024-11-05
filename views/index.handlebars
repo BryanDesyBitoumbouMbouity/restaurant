@@ -1,0 +1,12 @@
+<h1>Menu</h1>
+
+<div class="list">
+    {{#each produits}}
+        <div class="item">
+            <img src="./img/{{this.chemin_image}}">
+            <div class="title">{{this.nom}}</div>
+            <div class="price">{{this.prix}} CAD</div>
+            <button class="boutonAjouterAuPanier" data-id="{{this.id_produit}}">Ajouter au panier</button>
+        </div>
+    {{/each}}
+</div>
